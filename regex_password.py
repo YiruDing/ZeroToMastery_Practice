@@ -1,7 +1,8 @@
 import re 
 
-check = re.compile(r"(^[a-zA-Z0-9$%#@]{8,})")
-
-string = '32frd34refg'
-a=check.search(string)
-print(a)
+pattern = re.compile(r"(^[a-zA-Z0-9$%#@]{7,}[0-9])")
+# [0-9] could be \d 
+# End with num? Just use "\d$"
+password = '32frd34refg1'
+check= pattern.fullmatch(password)
+print(check)

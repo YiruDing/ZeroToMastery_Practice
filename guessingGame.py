@@ -11,7 +11,7 @@ import sys,random
 #         count -= 1
 
 answer = random.randint(1,10)
-answer = random.randint(sys.argv[1],sys.argv[2])
+# answer = random.randint(sys.argv[1],sys.argv[2])
 while True:
     try:
         guess = int(input('Guess the number 1-10 : '))
